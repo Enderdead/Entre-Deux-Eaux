@@ -61,8 +61,9 @@ Particle.prototype.render = function() {
 }
 
 function onMouseMove(e) {
-    mouse.x = e.clientX - 50;
-    mouse.y = e.clientY - 160;
+    var rect = canvas.getBoundingClientRect();
+    mouse.x = (e.clientX- rect.left)*ww/(rect.right-rect.left);
+    mouse.y = (e.clientY- rect.top)*wh/(rect.bottom-rect.top);
 }
 
 function onTouchMove(e) {
