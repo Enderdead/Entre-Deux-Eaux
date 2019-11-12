@@ -21,7 +21,7 @@ function Particle(x, y, radius) {
     if (!radius){
         this.r = Math.random() * 5 + 2;
     }else{
-        this.r = Math.random() *radius*2  + radius;
+        this.r = radius;
     }
     this.vx = (Math.random() - 0.5) * 0;
     this.vy = (Math.random() - 0.5) * 0;
@@ -98,7 +98,7 @@ function initScene() {
     for (var i = 0; i < ww; i += Math.round(ww / 150)) {
         for (var j = 0; j < wh; j += Math.round(ww / 150)) {
             if (data[((i + j * ww) * 4) + 3] > 150) {
-                particles.push(new Particle(i, j,(ww+wh)/800 ));
+                particles.push(new Particle(i, j,((ww+wh)/500)* (((Math.random()-0.5))+1) ));
             }
         }
     }
