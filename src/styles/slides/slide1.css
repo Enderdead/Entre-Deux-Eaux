@@ -1,12 +1,19 @@
 .box-slide1 {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-#subtitle-slide1 { 
+#subtitle-slide1 {
     position: absolute;
     z-index: inherit 1;
     top: 53%;
-    left: 6%;
+    left: 3.5%;
     font-size: 1.5vw;
+    font-weight: 600;
+    color: #5551cf;
+}
+
+#scene {
+    max-height: 60vh;
+    max-width: 70vw;
 }

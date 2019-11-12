@@ -1,0 +1,34 @@
+.box-slide2 {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+#title-slide2 {
+    font-size: 250%;
+    margin-left: 3%;
+    color: #5551cf;
+    font-weight: 600;
+}
+
+#text-slide2 {
+    margin: 3%;
+    margin-right: 50%;
+    font-size: 120%;
+    border: 1px solid #2c28ac;
+    padding: 3%;
+}
+
+#dix-pourcent-slide2 {
+    font-size: 400%;
+    color: #2c28ac;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+#image-slide2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

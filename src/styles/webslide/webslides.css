@@ -2277,19 +2277,11 @@ section,
     min-height: 80vh;
     /*Fullscreen*/
     /* Prototyping? min-height: 720px (Baseline: 8px = .8rem)*/
-    padding: 2.4rem;
+    /* padding: 2.4rem; */
     /*Fixed/Visible header? padding-top: 12rem; */
     page-break-after: always;
     position: relative;
     word-wrap: break-word;
-}
-
-@media (min-width: 1024px) {
-    section,
-    .slide {
-        padding-bottom: 12rem;
-        padding-top: 12rem;
-    }
 }
 
 

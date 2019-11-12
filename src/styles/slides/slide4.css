@@ -1,0 +1,13 @@
+.box-slide4parent {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.box-slide4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60vh;
+}
