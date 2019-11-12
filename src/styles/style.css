@@ -4,13 +4,8 @@ body {
     overflow: hidden;
 }
 
-#subtitle1 {
-    position: absolute;
-    z-index: inherit 1;
-}
-
 #content {
-    /* padding: 50px; */
+
     /* margin: 50px; */
     /* background-color: #d9fae2; */
 }
