@@ -53,28 +53,24 @@ a {
 
 @media (max-width:1024px),
 (max-height:600px) {
-
     .title1 {
         font-size: 40px;
     }
-
     .title2 {
         font-size: 30px;
     }
-
     .title3 {
         font-size: 22px;
     }
-
     .paragraph {
         font-size: 14px;
         line-height: 20px;
     }
-
     .sectionBorder {
         border-width: 25px 50px 50px 50px;
     }
 }
+
 
 /* DIAPO1 */
 
@@ -158,9 +154,8 @@ a {
     color: #004460;
 }
 
+
 /* DIAPO1 */
-
-
 
 
 /* DIAPO2 */
@@ -220,28 +215,23 @@ a {
     padding-top: 20px;
     padding-bottom: 200px;
     display: none;
-
 }
 
 @media (max-width:1024px) {
-
     .txt2x3 {
         font-size: 14px;
         line-height: 20px;
     }
-
     .txt2x1 {
         font-size: 22px;
     }
-
     .txt2x2 {
         font-size: 30px;
     }
 }
 
+
 /* DIAPO2 */
-
-
 
 
 /* DIAPO3 */
@@ -305,7 +295,6 @@ a {
     text-align: justify;
 }
 
-
 .txt3xquestion {
     position: absolute;
     top: 35%;
@@ -315,7 +304,6 @@ a {
     font-size: 18px;
     font-weight: bold;
 }
-
 
 .txt3xchoix1 {
     position: absolute;
@@ -421,7 +409,6 @@ a {
     cursor: pointer;
 }
 
-
 .definition3 {
     color: #a00;
 }
@@ -450,13 +437,11 @@ a {
 }
 
 @media (max-width:1024px) {
-
     .
 }
 
+
 /* DIAPO3 */
-
-
 
 
 /* DIAPO4 */
@@ -496,9 +481,8 @@ a {
     text-align: justify;
 }
 
+
 /* DIAPO4 */
-
-
 
 
 /* DIAPO5 */
@@ -632,13 +616,11 @@ a {
     vertical-align: middle;
     padding-top: 20px;
     padding-bottom: 150px;
-
     display: table;
 }
 
+
 /* DIAPO5 */
-
-
 
 
 /* DIAPO6 */
@@ -782,9 +764,8 @@ a {
     color: white;
 }
 
+
 /* DIAPO6 */
-
-
 
 
 /* DIAPO7 */
@@ -1004,9 +985,8 @@ a {
     color: white;
 }
 
+
 /* DIAPO7 */
-
-
 
 
 /* DIAPO8 */
@@ -1079,7 +1059,6 @@ a {
     font-size: 2.5vw;
     font-weight: bold;
     color: #ffffff;
-
 }
 
 .txt9x2 {
@@ -1372,7 +1351,9 @@ a {
     top: 85%;
 }
 
+
 /* The slider itself */
+
 .slider {
     -webkit-appearance: none;
     /* Override default CSS styles */
@@ -1392,13 +1373,17 @@ a {
     transition: opacity .2s;
 }
 
+
 /* Mouse-over effects */
+
 .slider:hover {
     opacity: 1;
     /* Fully shown on mouse-over */
 }
 
+
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     /* Override default look */
@@ -1486,5 +1471,4 @@ a {
     left: 43%;
     width: 0.1%;
     background-color: transparent;
-
 }
