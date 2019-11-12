@@ -8,7 +8,6 @@ var canvas = document.querySelector("#scene"),
 var colors = ["#7B68EE", "#D8BFD8", "#EE82EE", "#5551cf", "#BA55D3"];
 
 var texte = "Entre deux eaux"
-
 var ww = canvas.width = window.innerWidth;
 var wh = canvas.height = window.innerHeight;
 
@@ -83,7 +82,6 @@ function initScene() {
     wh = canvas.height = window.innerHeight;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
     ctx.font = "bold " + (ww / 10) + "px sans-serif";
     ctx.textAlign = "center";
     ctx.fillText(texte, ww / 2, wh / 2);
