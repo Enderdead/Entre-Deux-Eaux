@@ -32,3 +32,11 @@
     right: 0;
     top: 0;
 }
+
+#button-slide2 {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font-size: 3vw;
+    color: #2c28ac;
+}
