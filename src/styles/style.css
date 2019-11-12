@@ -1,19 +1,19 @@
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 #content {
-  /* padding: 50px; */
-  /* margin: 50px; */
-  /* background-color: #d9fae2; */
+    /* padding: 50px; */
+    /* margin: 50px; */
+    /* background-color: #d9fae2; */
 }
 
 .column {
-  float: left;
-  width: 50%;
-  flex: 50%;
+    float: left;
+    width: 50%;
+    flex: 50%;
 }
 
 .row:after {
@@ -23,28 +23,27 @@ body {
 }
 
 #particles-js {
-  width: 100%;
-  height: 100vh;
-  background: #03a9f4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: #03a9f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #info_commune {
-  background: #ffffff50;
-  height: 50vh;
-  border-radius: 25px;
-  padding: 20px;
+    background: #ffffff50;
+    height: 50vh;
+    border-radius: 25px;
+    padding: 20px;
 }
 
-
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="column"] {
-    width: 100%;
-  }
+    /* For mobile phones: */
+    [class*="column"] {
+        width: 100%;
+    }
 }
