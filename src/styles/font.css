@@ -1,0 +1,31 @@
+.raleway {
+	font-family: 'Raleway', helvetica, arial, sans-serif; 
+}
+	
+/* Ultra Light */
+@font-face {
+	font-family: 'Raleway';
+	font-weight: 100;
+	src: url("https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2"); 
+}
+		
+/* Thin */
+@font-face {
+	font-family: 'Raleway';
+	font-weight: 200;
+	src: url("https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2"); 
+}
+			
+/* Regular */
+@font-face {
+	font-family: 'Raleway';
+	font-weight: 400;
+	src: url("https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2"); 
+}
+				
+/* Bold */
+@font-face {
+	font-family: 'Raleway';
+	font-weight: bold;
+	src: url("https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2"); 
+}
