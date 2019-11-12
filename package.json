@@ -5,7 +5,7 @@
     "main": "test.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npx live-server --port=8383 src"
+        "start": "npx live-server --port=8383"
     },
     "author": "",
     "license": "ISC",
