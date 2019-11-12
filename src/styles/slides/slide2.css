@@ -6,22 +6,23 @@
 }
 
 #title-slide2 {
-    font-size: 250%;
+    font-size: 2.5vw;
     margin-left: 3%;
     color: #5551cf;
     font-weight: 600;
 }
 
 #text-slide2 {
-    margin: 3%;
-    margin-right: 50%;
-    font-size: 120%;
+    margin-left: 3%;
+    margin-right: 45%;
+    font-size: 1.2vw;
     border: 1px solid #2c28ac;
     padding: 3%;
+    max-height: 65vh;
 }
 
 #dix-pourcent-slide2 {
-    font-size: 400%;
+    font-size: 4vw;
     color: #2c28ac;
     font-weight: 700;
     margin-bottom: 5%;
@@ -31,6 +32,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    height: 30vw;
 }
 
 #button-slide2 {
@@ -39,4 +41,11 @@
     bottom: 5%;
     font-size: 3vw;
     color: #2c28ac;
+}
+
+@media (max-width:1300px) {
+    #text-slide2 {
+        font-size: 2vw;
+        width: 93%;
+    }
 }

@@ -6,7 +6,7 @@
 }
 
 #title-slide8 {
-    font-size: 250%;
+    font-size: 2.5vw;
     margin-left: 3%;
     color: #5551cf;
     font-weight: 600;
@@ -21,6 +21,7 @@
 }
 
 #partie-droite-slide8 {
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
