@@ -8,12 +8,13 @@
 
     <!-- Stylesheets here --->
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/jqvmap.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="src/styles/map/jqvmap.css" media="screen" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600,600i,700">
-    <link rel="stylesheet" href="src/styles/webslides.css">
-    <link rel="stylesheet" href="src/styles/animation.css">
-    <link rel="stylesheet" href="src/styles/font.css">
+    <link rel="stylesheet" href="src/styles/webslide/webslides.css">
+    <link rel="stylesheet" href="src/styles/webslide/animation.css">
+    <link rel="stylesheet" href="src/styles/webslide/font.css">
     <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/slides/slide3.css">
 </head>
 
 
@@ -29,6 +30,9 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
         <section class="sectionBorder section1">
             <canvas id="scene"></canvas>
+            <div id="subtitle1">
+                <p>Plongée dans le monde lucratif d’une ressource vitale que se entre gestion publique et privée.</p>
+            </div>
         </section>
 
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -57,8 +61,16 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder section3">
-
+            <div id="content" class="column">
+                <div>
+                    <p>La délégation des services publics</p>
+                    <button onClick="changeSlide3Content('bref')">En bref</button>
+                    <button onClick="changeSlide3Content('detail')">En détail</button>
+                </div>
+                <div id="slide3content"></div>
+            </div>
         </section>
+
 
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
         <!----------------------------------------------------------------DIAPO 4------------------------------------------------------------------------------->
@@ -143,14 +155,15 @@
     <script src="src/data/departements.js"></script>
 
     <script src="src/vendors/webslides.js"></script>
-    <script src="src/scripts/slide1/slide1.js"></script>
+    <script src="src/scripts/slides/slide1/slide1.js"></script>
+    <script src="src/scripts/slides/slide3/slide3.js"></script>
     <script src="src/scripts/main.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-    <script src="src/scripts/map/jquery.vmap.js" type="text/javascript"></script>
-    <script src="src/scripts/map/jquery.vmap.france.js" type="text/javascript"></script>
-    <script src="src/scripts/map/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
-    <script src="src/scripts/commune-search.js" type="text/javascript"></script>
-    <script src="src/scripts/map.js" type="text/javascript"></script>
+    <script src="src/scripts/slides/map/jquery.vmap.js" type="text/javascript"></script>
+    <script src="src/scripts/slides/map/jquery.vmap.france.js" type="text/javascript"></script>
+    <script src="src/scripts/slides/map/jquery.vmap.colorsFrance.js" type="text/javascript"></script>
+    <script src="src/scripts/slides/map/commune-search.js" type="text/javascript"></script>
+    <script src="src/scripts/slides/map/map.js" type="text/javascript"></script>
     <script src="src/scripts/background/particles.js" type="text/javascript"></script>
     <script src="src/scripts/background/app.js" type="text/javascript"></script>
 </body>
