@@ -201,11 +201,11 @@ function getInfoSimilaire(nom_commune) {
 
             }
             if (best_idx != -1) {
-                var res = "Une commune similaire a été trouvé. Le syndic de " + communes[best_idx].commune + " propose des prix ";
+                var res = "Une commune similaire a été trouvée. Le syndic de " + communes[best_idx].commune + " propose des prix ";
                 if (communes[best_idx].data[0].prix < communes[i].data[0]) {
-                    res += " plus atractif que la votre.";
+                    res += " plus attractifs que la vôtre.";
                 } else {
-                    res += " moins atractif que la votre.";
+                    res += " moins attractifs que la vôtre.";
                 }
                 return res;
             }
