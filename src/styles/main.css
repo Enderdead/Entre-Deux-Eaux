@@ -49,8 +49,9 @@ a {
 .sectionBorder1 {
     /* border-style: solid; */
     /* border-width: 50px 100px 100px 100px; */
-    margin: 10% 5% 5% 5%;
-    background-color: transparent;
+    /* margin-top: 5%; */
+    height: 100%;
+    background-color: white;
     /*top right bottom left*/
     /* -moz-box-shadow: 3v 3px 5px 6px rgb(105, 105, 105);
     -webkit-box-shadow: 3px 3px 5px 6px rgb(105, 105, 105);
@@ -252,10 +253,11 @@ a {
     width: 0.1%;
     background-color: transparent;
 }
+
 #myVideo {
     position: fixed;
     left: 0;
     width: 100%;
     top: 0;
     z-index: -2;
-  }
+}
