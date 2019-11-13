@@ -75,7 +75,7 @@ a {
     /* background-color: red; */
     height: 95vh;
     width: 90vw;
-    background-color: #d3d3d3AA;
+    background-color: #d3d3d3DD
 }
 
 #page {
@@ -85,7 +85,7 @@ a {
     /* background-color: red; */
     height: 101vh;
     width: 90vw;
-    background-color: #d3d3d3AA;
+    background-color: #d3d3d3DD;
 }
 
 #page3 {
@@ -95,7 +95,7 @@ a {
     /* background-color: red; */
     height: 95vh;
     width: 90vw;
-    background-color: #d3d3d3AA;
+    background-color: #d3d3d3DD;
 }
 
 @media (max-width:1024px),
