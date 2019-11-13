@@ -15,8 +15,7 @@
 #text-slide2 {
     margin-left: 3%;
     margin-right: 45%;
-    font-size: 120%;
-    border: 1px solid #2c28ac;
+    font-size: 1em;
     padding: 3%;
     max-height: 65vh;
     overflow-y: scroll;
@@ -63,6 +62,6 @@
     }
 
     #title-slide2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }

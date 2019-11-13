@@ -17,7 +17,7 @@
     border-radius: 25px;
     padding: 20px;
     font-size: 0.5em;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #partie-gauche-slide3 {
@@ -38,11 +38,12 @@
     font-weight: 600;
 }
 
-#button1 {
+#button-slide3 {
     width: 25%;
 }
 
 @media (max-width:1300px) {
+
     #partie-droite-slide3 {
         visibility: hidden;
         width: 0%;
@@ -56,5 +57,8 @@
         border-radius: 25px;
         padding: 20px;
         font-size: 2em;
+    }
+    #button-slide3 {
+        width: 5%;
     }
 }
