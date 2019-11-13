@@ -4,7 +4,14 @@
         height: 70vh;
         justify-content: space-between;
     }
-    
+    #text-slide21 {
+        margin-left: 3%;
+        margin-right: 0%;
+        font-size: 1.5em;
+        padding: 3%;
+        max-height: 65vh;
+        overflow-y: scroll;
+    }  
     #title-slide2 {
         font-size: 4em;
         margin-left: 6%;
