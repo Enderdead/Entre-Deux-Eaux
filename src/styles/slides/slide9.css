@@ -17,7 +17,7 @@
 }
 
 .column2-slide9 {
-    margin-left: 10%;
+    margin-left: 5%;
     height: 100%;
     width: 45%;
     display: flex;
@@ -45,8 +45,12 @@
 .row_logos {
     height: 100%;
     width: 100%;
-    background-color: red;
     margin-top: 3%;
+}
+
+#img-logos {
+    margin-top: 10%;
+    width: 100%;
 }
 
 #names>b {
