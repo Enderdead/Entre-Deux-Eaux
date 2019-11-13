@@ -8,9 +8,10 @@
 
 #video-slide1 {
     position: absolute;
-    left: 42%;
+    z-index: 0;
+    left: 47.5%;
     bottom: 5%;
-    height: 20%;
+    height: 10%;
 }
 
 #subtitle-slide1 {

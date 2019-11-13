@@ -21,7 +21,14 @@
                     max-height: 65vh;
                     overflow-y: scroll;
                 }
-                
+                #text-slide21 {
+                    margin-left: 3%;
+                    margin-right: 0%;
+                    font-size: 1.5em;
+                    padding: 3%;
+                    max-height: 65vh;
+                    overflow-y: scroll;
+                }  
                 #dix-pourcent-slide2 {
                     font-size: 2em;
                     color: rgb(80, 136, 160);
