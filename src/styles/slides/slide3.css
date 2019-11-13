@@ -16,14 +16,15 @@
     height: 50vh;
     border-radius: 25px;
     padding: 20px;
-    font-size: 1.2vw;
+    font-size: 0.5em;
+    overflow: scroll;
 }
 
 #partie-gauche-slide3 {
     min-width: 50%;
     margin-left: 3%;
     border: 1px solid #2c28ac;
-    font-size: 2vw;
+    font-size: 2em;
 }
 
 #partie-droite-slide3 {
@@ -31,7 +32,7 @@
 }
 
 #title-slide3 {
-    font-size: 2.5vw;
+    font-size: 2em;
     margin-left: 3%;
     color: #5551cf;
     font-weight: 600;
@@ -44,11 +45,12 @@
     }
     #partie-gauche-slide3 {
         width: 100%;
+        font-size: 0.5em;
     }
     #info_commune {
         height: 50vh;
         border-radius: 25px;
         padding: 20px;
-        font-size: 2vw;
+        font-size: 2em;
     }
 }
