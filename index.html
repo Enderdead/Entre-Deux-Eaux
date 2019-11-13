@@ -7,7 +7,10 @@
     <title>Hyblab</title>
 
     <!-- Stylesheets here --->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/webslide/font.css">
+    <link rel="stylesheet" href="src/styles/main.css">
     <link rel="stylesheet" href="src/styles/slides/slide1.css">
     <link rel="stylesheet" href="src/styles/slides/slide2.css">
     <link rel="stylesheet" href="src/styles/slides/slide3.css">
@@ -19,8 +22,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600,600i,700">
     <link rel="stylesheet" href="src/styles/webslide/webslides.css">
     <link rel="stylesheet" href="src/styles/webslide/animation.css">
-    <link rel="stylesheet" href="src/styles/webslide/font.css">
-    <link rel="stylesheet" href="src/styles/main.css">
 </head>
 
 
@@ -42,7 +43,7 @@
             <div class="box-slide1">
                 <canvas id="scene"></canvas>
                 <div id="subtitle-slide1">
-                    <p>Plongée dans le monde lucratif d’une ressource vitale qui se partage entre gestion publique et privée.</p>
+                    <p>Plongée dans le monde lucratif d’une ressource vitale que se disputent public et privé</p>
                 </div>
             </div>
         </section>
@@ -53,14 +54,14 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
         <section class="sectionBorder">
             <div class="box-slide2">
-                <p id="title-slide2">Etat des lieux en France</p>
+                <p id="title-slide2">L'eau en France</p>
                 <div id="text-slide2">
                     <p id="dix-pourcent-slide2">10%.</p>
                     <p align="justify">
-                        C’est l’écart de prix de l’eau lorsque sa gestion est confiée à une régie (un service public) plutôt qu’à une entreprise privée (service en délégation). Dans son rapport de septembre 2019, l’Observatoire des services publics d’eau et d’assainissement
-                        recensait, en 2016, 32 508 services, portés par 21 488 collectivités. Environ 7 550 services sont gérés par une entreprise privée en délégation de service public (DSP). Rapporté à la population, 58 % des Français relèvent d’une
-                        DSP pour l’accès à l’eau potable. Trois entreprises privées se partagent 90 % du marché privé français : Veolia, Suez et Saur. Cette dernière est principalement présente dans les communes rurales, se distinguant des deux mastodontes
-                        du secteur, Veolia et Suez, qui se disputent les contrats des plus grandes villes de l’Hexagone.
+                        C’est l’écart de prix de l’eau lorsque sa gestion est confiée à une régie (un service public) plutôt qu’à une entreprise privée (service en délégation).<br/><br/> Dans son rapport de septembre 2019, l’Observatoire des services
+                        publics d’eau et d’assainissement recensait, en 2016, 32 508 services, portés par 21 488 collectivités.<br/> <br/>Environ 7 550 services sont gérés par une entreprise privée en délégation de service public (DSP). Rapporté à la
+                        population, 58 % des Français relèvent d’une DSP pour l’accès à l’eau potable.<br/><br/> Trois entreprises privées se partagent 90 % du marché privé français : Veolia, Suez et Saur. Cette dernière est principalement présente dans
+                        les communes rurales, se distinguant des deux mastodontes du secteur, Veolia et Suez, qui se disputent les contrats des plus grandes villes de l’Hexagone.
 
                 </div>
             </div>
@@ -75,11 +76,19 @@
 
         <section class="sectionBorder">
             <div class="box-slide3parent">
-                <p id="title-slide3">Qu'en est-il près de chez vous ?</p>
+                <p id="title-slide3">Vous et votre eau : qu'en est-il près de chez vous ?</p>
                 <!-- ################################### Recherche de commune ################################### -->
                 <div class="box-slide3">
                     <div id="partie-gauche-slide3">
                         <div id="info_commune">
+                            <div id="consignes">
+                                Votre maire a-t-il délégué la gestion de l’eau potable à une entreprise privée ? Est-elle restée dans le giron public ? Quel est le prix de l’eau dans votre commune ? Comment se place-t-elle par rapport à la moyenne départementale et nationale ?
+
+                                <br/><br/>Découvrez les informations concernant la gestion de l’eau de votre commune grâce à notre carte intéractive !
+
+                                <br/><br/>En survolant la carte avec votre curseur, vous pourrez aussi découvrir ce qui se passe près de chez vous ou ailleurs dans l’Hexagone.
+                                <br/><br/>
+                            </div>
                             <label for="commune">Votre commune :
                                     <input list="communes" id="commune" name="commune" style="width:50%"/>
                                 </label>
@@ -116,14 +125,13 @@
 
         <section class="sectionBorder">
             <div class="box-slide2">
-                <p id="title-slide2">Qu'en pensent les maires ?</p>
+                <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
                 <div id="text-slide2">
                     <p align="justify">
-                        Selon Simon Porcher, maître de conférence à l’institut d’administration des entreprises et spécialiste de réforme des services publics de l’eau en France, <i>“les maires veulent garder la compétence de l'eau, ils ne veulent pas qu'il y ait un régulateur
-                        au niveau national. Ils veulent garder les prérogatives que sont par exemple la négociation du contrat, quitte parfois à négocier des mauvais contrats.”</i> Mais en réalité <i>“ils se font rouler”</i>. La loi NOTRe implique pour
-                        eux une perte de pouvoir, celui-ci s’échappant vers les intercommunalités, qui se voient ainsi renforcées. Conséquences : de plus gros contrats, avec de plus grandes populations desservies. Ticket gagnant pour les opérateurs privés
-                        car qui dit plus gros contrat dit plus d’attrait pour le signer. Et comme le précise Simon Porcher : <i>“Avant, quand ils perdaient un contrat, ils perdaient leur business” mais de plus importants “ça pourrait les inciter à mettre des
-                        prix plus raisonnables pour une même qualité de service.”</i>
+                        <i>“Le public n’était pas en mesure de faire aussi bien que la société privée”</i>, assurait en 2017 Christophe Castaner, alors porte-parole du gouvernement, à propos de la gestion des services publics par le privé. Il avait résumé
+                        la pensée de la plupart des élus français : le privé serait plus compétent techniquement et moins cher.<br/><br/> Certains maires préfèrent que la gestion de l’eau soit déléguée à ceux dont c’est l’expertise, pour le bien-être
+                        des réseaux de leur commune. Et de celui de leurs administrés, les premiers concernés. Mais selon Gabriel Amard, élu France Insoumise et auteur de <i>D comme Droit à l'eau</i>, il y a cet autre argument : nos élus <i>“ne veulent pas se fatiguer. Il se disent que c’est plus simple”</i>,
+                        admet-il dans le livre d’Isabelle Jarjaille <i>Services publics délégués au privé : à qui profite le deal</i>.
                     </p>
                 </div>
             </div>
@@ -137,12 +145,37 @@
         <section class="sectionBorder">
             <div class="box-slide2">
                 <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
+                <p id="subtitle-slide2">Le privé ferait mieux, plus vite et moins cher</p>
                 <div id="text-slide2">
                     <p align="justify">
-                        <i>“Le public n’était pas en mesure de faire aussi bien que la société privée”</i>, assurait en 2017 Christophe Castaner, alors porte-parole du gouvernement, à propos de la gestion des services publics par le privé. Il avait résumé
-                        la pensée de la plupart des élus français : le privé serait plus compétent techniquement et moins cher. Certains maires préfèrent que la gestion de l’eau soit déléguée à ceux dont c’est l’expertise, pour le bien-être des réseaux
-                        de leur commune. Et de celui de leurs administrés, les premiers concernés. Mais selon Gabriel Amard, élu France Insoumise et auteur de <i>D comme Droit à l'eau</i>, il y a cet autre argument : nos élus <i>“ne veulent pas se fatiguer. Il se disent que c’est plus simple”</i>,
-                        admet-il dans le livre d’Isabelle Jarjaille <i>Services publics délégués au privé : à qui profite le deal</i>.
+                        Ce point de vue, c’est aussi celui de Simon Porcher : <i>“Quand les municipalités savent faire, elles le font en régie. Quand c'est trop compliqué, elles passent par l'entreprise privée qui va mieux gérer.”</i>Autrement dit, pour
+                        le maire, moins de problème : c’est l’entreprise privée qui fera le job.<br/><br/> Ce sont les élus qui ont le dernier mot. Mais ce serait oublier que derrière, se trouvent aussi les personnels administratifs de la municipalité,
+                        les directeurs généraux des services. Ces cadres, sortis des écoles d’administration, où la délégation à bonne presse, reproduisent alors ce modèle. Ils sont alors déchargés des responsabilités et des ennuis éventuels qui en découlent.
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <!----------------------------------------------------------------DIAPO 6------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------Municipales------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+        <section class="sectionBorder">
+            <div class="box-slide2">
+                <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
+                <p id="subtitle-slide2">La DSP n’est pas exempte de fuites</p>
+                <div id="text-slide2">
+                    <p align="justify">
+                        Mais la délégation n’est pas exempte de fuite. Dans son rapport d’avril 2018, sur l'alimentation en eau potable de la métropole du Grand Paris, la Chambre régionale des comptes d’Île-de-France note des dysfonctionnements récurrents dans la gestion déléguée.
+                        Le premier, c'est le tarif plus élevé de l’eau (en moyenne 10% plus chère qu’en régie publique). C’est lié à “l'application de formules d'indexation, qui conduit à des tarifs déconnectés du coût réel de l’exploitation”. Un prix
+                        de l’eau plus élevé pour permettre, normalement, à la société gérante de mettre en oeuvre des travaux pour bien entretenir le réseau. Or, il n’y a pas de garantie qu’elle fasse le nécessaire en termes sanitaires notamment : un
+                        risque pour la santé des usagers. Le second concerne le manque de clarté financière entre le délégataire et l’autorité publique. En effet, cette dernière ne permet pas à la collectivité de garder la main sur la gestion du service.
+                        Et en pointant du doigts les déboires de la DSP, la Chambre souligne aussi les bienfaits de la régie publique de l’eau, dont l’un des avantages est que “la collectivité dispose de l’intégralité de l'information financière qui la
+                        concerne.”
+
                     </p>
                 </div>
             </div>
@@ -208,11 +241,13 @@
                 <p id="title-slide8">Plus d'informations</p>
                 <div class="row-slide8">
                     <div id="partie-gauche-slide8">
-                        <div onmouseover="changeSlide8Content('bref')" class="button-slide8" id="enbref-slide8">La délégation des services publics en bref</div>
+                        <div onmouseover="changeSlide8Content('bref')" class="button-slide8" id="enbref-slide8">La délégation de service public en bref</div>
                         <br/>
-                        <div onmouseover="changeSlide8Content('detail')" class="button-slide8" id="endetail-slide8">La délégation des services publics en détail</div>
+                        <div onmouseover="changeSlide8Content('detail')" class="button-slide8" id="endetail-slide8">La délégation de service public en détail</div>
                         <br/>
                         <div onmouseover="changeSlide8Content('loi')" class="button-slide8" id="loi-slide8">Le cadre juridique</div>
+                        <br/>
+                        <div onmouseover="changeSlide8Content('maires')" class="button-slide8" id="maires-slide8">Qu'est-ce que cela changera pour les maires ?</div>
                     </div>
                     <div id="partie-droite-slide8">
                         <div class="container-slide8">
@@ -236,13 +271,22 @@
                 </div>
                 <div class="row-slide9">
                     <div id="partie-gauche-slide9">
+                        <p>
+                            Kevin Despoulains<br/> François Gauthier-Clerc <br/>Corentin Guilloux <br/>Maëva Picard
 
+                        </p>
                     </div>
                     <div id="partie-droite-slide9">
-
+                        <p>
+                            Arthur Sautrel <br/>Mathilde Sourd <br/>Sarah Vermauwt
+                        </p>
                     </div>
                 </div>
-            </div>
+                <div class="row2-slide9">
+                    <div class="img-slide9">
+                        <img src="src/images/logos.png" />
+                    </div>
+                </div>
         </section>
     </article>
 
