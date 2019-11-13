@@ -25,6 +25,8 @@ loi += "<div class='ps-slide8'><p align='justify'><b>Le saviez-vous ?</b> L’ea
 loi += "<p align='justify'><b>Et en France Alors ?</b> Une loi sur la mise en oeuvre effective du droit à l’eau potable et à l'assainissement a été adoptée par l’Assemblée nationale en juin 2016, mais le Sénat entre-temps, est passé par là : vidée de son contenu par le retrait de l’article permettant son financement, cette loi n’est pas retournée devant le Parlement lors de la précédente législature (Gouvernement Hollande). Aucun article n’a donc été adopté. Cette proposition devrait à nouveau être déposée. Mais pour l’instant, selon <a href='http://www.coalition-eau.org/nos-actions/plaidoyer/droit-a-leau-en-france/ ' target='_blank'>Coalition Eau</a> (mouvement des ONG françaises engagées pour l’accès à l’eau et à l’assainissement pour tous), la nouvelle législature fait des ronds dans l’eau...</p>"
 loi += "<p align='justify'>Ce qui n’est pas le cas concernant la mise en oeuvre  la loi NOTRe du 7 août 2015. Elle prévoit que le transfert des compétences « eau et assainissement » vers les communautés de communes et les communautés d’agglomération, sera obligatoire à compter du 1er janvier 2020.</p></div>"
 
+var maires = "<p align='justify'>Selon Simon Porcher, <i>“les maires veulent garder la compétence de l'eau, ils ne veulent pas qu'il y ait un régulateur au niveau national. Ils veulent garder les prérogatives que sont par exemple la négociation du contrat, quitte parfois à négocier des mauvais contrats.”</i> Mais en réalité <i>“ils se font rouler”</i>. La loi NOTRe implique pour eux une perte de pouvoir, celui-ci s’échappant vers les intercommunalités, qui se voient ainsi renforcées. Conséquences : de plus gros contrats, avec de plus grandes populations desservies. Ticket gagnant pour les opérateurs privés car qui dit plus gros contrat dit plus d’attrait pour le signer. Et comme le précise Simon Porcher : <i>“Avant, quand ils perdaient un contrat, ils perdaient leur business”</i> mais de plus en plus importants <i>“ça pourrait les inciter à mettre des prix plus raisonnables pour une même qualité de service.”</i></p>"
+
 slide8content.innerHTML = enBref;
 
 function changeSlide8Content(mode) {
@@ -33,15 +35,26 @@ function changeSlide8Content(mode) {
         document.getElementById("enbref-slide8").style.backgroundColor = '#AAAAAACC'
         document.getElementById("endetail-slide8").style.backgroundColor = '#FFFFFF55'
         document.getElementById("loi-slide8").style.backgroundColor = '#FFFFFF55'
+        document.getElementById("maires-slide8").style.backgroundColor = '#FFFFFF55'
     } else if (mode == "detail") {
         slide8content.innerHTML = enDetail;
         document.getElementById("endetail-slide8").style.backgroundColor = '#AAAAAACC'
         document.getElementById("enbref-slide8").style.backgroundColor = '#FFFFFF55'
         document.getElementById("loi-slide8").style.backgroundColor = '#FFFFFF55'
-    } else {
+        document.getElementById("maires-slide8").style.backgroundColor = '#FFFFFF55'
+
+    } else if (mode == "loi") {
         slide8content.innerHTML = loi;
         document.getElementById("loi-slide8").style.backgroundColor = '#AAAAAACC'
         document.getElementById("endetail-slide8").style.backgroundColor = '#FFFFFF55'
         document.getElementById("enbref-slide8").style.backgroundColor = '#FFFFFF55'
+        document.getElementById("maires-slide8").style.backgroundColor = '#FFFFFF55'
+
+    } else {
+        slide8content.innerHTML = maires;
+        document.getElementById("maires-slide8").style.backgroundColor = '#AAAAAACC'
+        document.getElementById("endetail-slide8").style.backgroundColor = '#FFFFFF55'
+        document.getElementById("enbref-slide8").style.backgroundColor = '#FFFFFF55'
+        document.getElementById("loi-slide8").style.backgroundColor = '#FFFFFF55'
     }
 };

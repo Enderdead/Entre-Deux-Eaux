@@ -19,6 +19,7 @@ function init() {
 }
 
 function search() {
+    document.getElementById('consignes').innerHTML = '';
     document.getElementById('infos_commune').innerHTML = getInfo(document.getElementById('commune').value)
 }
 

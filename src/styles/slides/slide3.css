@@ -21,7 +21,7 @@
 }
 
 #partie-gauche-slide3 {
-    min-width: 50%;
+    min-width: 55%;
     margin-left: 3%;
     border: 1px solid #2c28ac;
     font-size: 2em;
@@ -36,6 +36,10 @@
     margin-left: 3%;
     color: #5551cf;
     font-weight: 600;
+}
+
+#button1 {
+    width: 25%;
 }
 
 @media (max-width:1300px) {
