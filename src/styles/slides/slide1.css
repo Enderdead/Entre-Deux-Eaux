@@ -1,20 +1,25 @@
 .box-slide1 {
+    margin-top: -200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #subtitle-slide1 {
-    position: absolute;
+    /* position: absolute;
     z-index: inherit 1;
     top: 53%;
-    left: 3.5%;
+    left: 50%; */
+    margin-top: -200px;
     font-size: 1.5em;
     font-weight: 600;
-    color: #5551cf;
+    color: #2586C2;
+    text-align: center;
 }
 
 #scene {
-    max-height: 60vh;
+    max-height: 80vh;
     max-width: 70vw;
 }
 
@@ -22,4 +27,9 @@
     #subtitle-slide2 {
         font-size: 0.5em;
     }
+}
+
+#gros_text {
+    font-weight: 700;
+    font-size: 2em;
 }
