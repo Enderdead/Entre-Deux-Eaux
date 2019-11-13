@@ -28,6 +28,7 @@ loi += "<p align='justify'>Ce qui n’est pas le cas concernant la mise en oeuvr
 var maires = "<p align='justify'>Selon Simon Porcher, <i>“les maires veulent garder la compétence de l'eau, ils ne veulent pas qu'il y ait un régulateur au niveau national. Ils veulent garder les prérogatives que sont par exemple la négociation du contrat, quitte parfois à négocier des mauvais contrats.”</i> Mais en réalité <i>“ils se font rouler”</i>. La loi NOTRe implique pour eux une perte de pouvoir, celui-ci s’échappant vers les intercommunalités, qui se voient ainsi renforcées. Conséquences : de plus gros contrats, avec de plus grandes populations desservies. Ticket gagnant pour les opérateurs privés car qui dit plus gros contrat dit plus d’attrait pour le signer. Et comme le précise Simon Porcher : <i>“Avant, quand ils perdaient un contrat, ils perdaient leur business”</i> mais de plus en plus importants <i>“ça pourrait les inciter à mettre des prix plus raisonnables pour une même qualité de service.”</i></p>"
 
 slide8content.innerHTML = enBref;
+document.getElementById("enbref-slide8").style.backgroundColor = '#AAAAAACC'
 
 function changeSlide8Content(mode) {
     if (mode == "bref") {
