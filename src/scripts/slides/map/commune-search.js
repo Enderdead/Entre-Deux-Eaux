@@ -23,12 +23,12 @@ function search() {
 }
 
 function getInfo(nom_commune) {
-    return getInfoCommune(nom_commune) + "<br/><br/>" + getInfoDepartement(nom_commune) + "<br/><br/>" + getInfoFrance()
+    return getInfoCommune(nom_commune) + "<br/><br/>" + getInfoDepartement(nom_commune) + "<br/><br/>" + getInfoFrance() + "<br/><br/>" + getInfoSimilaire(nom_commune); 
 }
 
 function getInfoCommune(nom_commune) {
     for (i in communes) {
-        if (nom_commune == (communes[i].commune + " (" + communes[i].departement + ")")) {
+        if (nom_commune == (communes[i].commune + " (" + communes[i].departement + ")") ) {
 
             // Collecte des infos pour tous les fournisseurs d'une même commune
             commune = communes[i]
@@ -108,7 +108,12 @@ function getInfoCommune(nom_commune) {
                     }
                     res += "est de " + mean.toFixed(2) + "€."
                 }
+
+
             }
+
+            // Ville similaire
+            
             return res
         }
     }
@@ -140,5 +145,76 @@ function getInfoDepartement(nom_commune) {
 function getInfoFrance() {
     return "En France, deux tiers des communes gèrent elles-mêmes la distribution de l'eau. En métropole, le prix moyen au mètre cube est de 2.43€."
 }
+
+
+function getDistance(pos1, pos2)
+
+{
+
+    var latitude1 = parseFloat(pos1[1]) * Math.PI / 180;
+    var latitude2 = parseFloat(pos2[1]) * Math.PI / 180;
+    var longitude1 =parseFloat(pos1[0])* Math.PI / 180;
+    var longitude2 =parseFloat(pos2[0])* Math.PI / 180;
+    var R = 6371.0;
+
+    var d = R * Math.acos(Math.cos(latitude1) * Math.cos(latitude2) *
+
+            Math.cos(longitude2 - longitude1) + Math.sin(latitude1) *
+
+                     Math.sin(latitude2));
+
+ 
+
+    return d;
+
+}
+
+function getInfoSimilaire(nom_commune) {
+    
+    for (i in communes) {
+        if (nom_commune == (communes[i].commune + " (" + communes[i].departement + ")") ) {
+            var bestHeuristique =  100000000;
+            var best_idx = -1;
+            for (autre in communes) {
+                if(autre==i){
+                    continue;
+                }
+                var autre_commune = communes[autre];
+                batchBestHeuristique = 100000000;
+                for (data_idx in autre_commune.data) {
+                    var dist =getDistance(communes[i].data[0].pos,autre_commune.data[data_idx].pos );
+                    var pop_dif = Math.abs(communes[i].data[0].population - autre_commune.data[data_idx].population)/communes[i].data[0].population;
+                    elementHeuristique = dist*(2.5)/100 + pop_dif;
+                    
+                    
+                    if(elementHeuristique<batchBestHeuristique){
+                        batchBestHeuristique = elementHeuristique;
+                    }
+
+                }
+                if(batchBestHeuristique<bestHeuristique){
+                    bestHeuristique = batchBestHeuristique;
+                    best_idx = autre;
+                }
+
+                
+            }
+            if (best_idx!=-1){
+                var res =  "Une commune similaire a été trouvé. Le syndic de " + communes[best_idx].commune + " propose des prix ";
+                if (communes[best_idx].data[0].prix<communes[i].data[0]){
+                    res += " plus atractif que la votre.";
+                }else{
+                    res += " moins atractif que la votre.";
+                }
+                return res;
+            }
+
+            return ""
+        }
+    }
+
+    return ""
+}
+
 
 init()
