@@ -29,6 +29,9 @@ var maires = "<p align='justify'>Selon Simon Porcher, <i>“les maires veulent g
 
 slide8content.innerHTML = enBref;
 document.getElementById("enbref-slide8").style.backgroundColor = '#AAAAAACC'
+cument.getElementById("endetail-slide8").style.backgroundColor = '#FFFFFF55'
+document.getElementById("loi-slide8").style.backgroundColor = '#FFFFFF55'
+document.getElementById("maires-slide8").style.backgroundColor = '#FFFFFF55'
 
 function changeSlide8Content(mode) {
     if (mode == "bref") {
