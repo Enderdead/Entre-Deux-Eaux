@@ -20,30 +20,52 @@
     overflow-y: scroll;
 }
 
+#infos_commune {
+    font-size: 1.5em;
+}
+
 #partie-gauche-slide3 {
-    min-width: 55%;
+    min-width: 60%;
     margin-left: 3%;
-    border: 1px solid #2c28ac;
     font-size: 2em;
+}
+
+#commune {
+    font-size: 1.4em;
+    border-radius: 100px;
+    height: 2em;
+    border: 1px solid #004B8E;
+    padding-left: 1em;
+    margin-right: 2em;
 }
 
 #partie-droite-slide3 {
-    margin-right: 10%;
+    margin-left: -5em;
 }
 
 #title-slide3 {
-    font-size: 2em;
-    margin-left: 3%;
-    color: #5551cf;
+    font-size: 4em;
+    margin-left: 6%;
+    color: #004B8E;
     font-weight: 600;
+    line-height: 1.1em;
 }
 
 #button-slide3 {
-    width: 25%;
+    font-size: 1.4em;
+    height: 2em;
+    width: 10em;
+    text-transform: capitalize;
+    border-radius: 100px;
+    color: #004B8E;
+    border: 1px solid #004B8E;
+}
+
+#consignes {
+    font-size: 1.5em;
 }
 
 @media (max-width:1300px) {
-
     #partie-droite-slide3 {
         visibility: hidden;
         width: 0%;

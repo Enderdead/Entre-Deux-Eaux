@@ -1,67 +1,75 @@
-.box-slide2 {
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    justify-content: space-between;
-}
-
-#title-slide2 {
-    font-size: 2.5em;
-    margin-left: 3%;
-    color: #5551cf;
-    font-weight: 600;
-}
-
-#text-slide2 {
-    margin-left: 3%;
-    margin-right: 45%;
-    font-size: 1em;
-    padding: 3%;
-    max-height: 65vh;
-    overflow-y: scroll;
-}
-
-#dix-pourcent-slide2 {
-    font-size: 4em;
-    color: #2c28ac;
-    font-weight: 700;
-    margin-bottom: 5%;
-}
-
-#image-slide2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 30vw;
-}
-
-#button-slide2 {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    font-size: 2em;
-    color: #2c28ac;
-}
-
-#subtitle-slide2 {
-    font-size: 2vw;
-    margin-left: 3%;
-    color: #5551cf;
-    font-weight: 600;
-}
-
-@media (max-width:1300px) {
-    #text-slide2 {
-        font-size: 1em;
-        width: 93%;
-        margin-bottom: 5%;
-    }
-
-    #button-slide2 {
-        font-size: 1em;
-    }
-
-    #title-slide2 {
-        font-size: 1.5em;
-    }
-}
+            .box-slide2 {
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+            justify-content: space-between;
+        }
+        
+        #title-slide2 {
+            font-size: 4em;
+            margin-left: 6%;
+            color: #004B8E;
+            font-weight: 600;
+            line-height: 1.1em;
+        }
+        
+        #text-slide2 {
+            margin-left: 3%;
+            margin-right: 45%;
+            font-size: 1.5em;
+            padding: 3%;
+            max-height: 65vh;
+            overflow-y: scroll;
+        }
+        
+        #dix-pourcent-slide2 {
+            font-size: 2em;
+            color: #99C7DA;
+            font-weight: 700;
+            margin-bottom: 5%;
+        }
+        
+        #image-slide2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 30vw;
+        }
+        
+        #button-slide2 {
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            font-size: 2em;
+            color: #2586C2;
+        }
+        
+        #subtitle-slide2 {
+            font-size: 2vw;
+            margin-left: 6%;
+            color: #2586C2;
+            font-weight: 600;
+        }
+        
+        i {
+            color: #2586C2;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        #underline {
+            font-style: italic;
+        }
+        
+        @media (max-width:1300px) {
+            #text-slide2 {
+                font-size: 1em;
+                width: 93%;
+                margin-bottom: 5%;
+            }
+            #button-slide2 {
+                font-size: 1em;
+            }
+            #title-slide2 {
+                font-size: 1.5em;
+            }

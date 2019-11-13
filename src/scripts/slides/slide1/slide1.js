@@ -5,7 +5,7 @@ var canvas = document.querySelector("#scene"),
     mouse = { x: 0, y: 0 },
     radius = 1;
 
-var colors = ["#7B68EE", "#D8BFD8", "#EE82EE", "#5551cf", "#BA55D3"];
+var colors = ["#004B8E", "#2586C2", "#69AEDB", "#99C7DA", "#369CDC"];
 
 var texte = "Entre deux eaux"
 var ww = canvas.width = window.innerWidth;
@@ -18,9 +18,9 @@ function Particle(x, y, radius) {
         x: x,
         y: y
     };
-    if (!radius){
+    if (!radius) {
         this.r = Math.random() * 5 + 2;
-    }else{
+    } else {
         this.r = radius;
     }
     this.vx = (Math.random() - 0.5) * 0;
@@ -65,8 +65,8 @@ Particle.prototype.render = function() {
 
 function onMouseMove(e) {
     var rect = canvas.getBoundingClientRect();
-    mouse.x = (e.clientX- rect.left)*ww/(rect.right-rect.left);
-    mouse.y = (e.clientY- rect.top)*wh/(rect.bottom-rect.top);
+    mouse.x = (e.clientX - rect.left) * ww / (rect.right - rect.left);
+    mouse.y = (e.clientY - rect.top) * wh / (rect.bottom - rect.top);
 }
 
 function onTouchMove(e) {
@@ -95,10 +95,10 @@ function initScene() {
     ctx.globalCompositeOperation = "screen";
 
     particles = [];
-    for (var i = 0; i < ww; i += Math.round(ww / 150)) {
-        for (var j = 0; j < wh; j += Math.round(ww / 150)) {
+    for (var i = 0; i < ww; i += Math.round(1 * ww / 150)) {
+        for (var j = 0; j < wh; j += Math.round(1 * ww / 150)) {
             if (data[((i + j * ww) * 4) + 3] > 150) {
-                particles.push(new Particle(i, j,((ww+wh)/500)* (((Math.random()-0.5))+1) ));
+                particles.push(new Particle(i, j, ((ww + wh) / 500) * (((Math.random() - 0.5)) + 1)));
             }
         }
     }

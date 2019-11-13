@@ -7,7 +7,7 @@
     <title>Hyblab</title>
 
     <!-- Stylesheets here --->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/webslide/font.css">
     <link rel="stylesheet" href="src/styles/main.css">
@@ -27,9 +27,7 @@
 
 <body>
     <!-- ################################### Background ################################### -->
-    <div id="particles-js"></div>
-
-
+    <!-- <div id="particles-js"></div> -->
 
 
     <!-- ################################### Content ################################### -->
@@ -39,12 +37,14 @@
         <!---------------------------------------------------------------- Home Page------------------------------------------------------------------------------->
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
-        <section class="sectionBorder">
+        <section class="sectionBorder1">
             <div class="box-slide1">
                 <canvas id="scene"></canvas>
-                <div id="subtitle-slide1">
-                    <p>Plongée dans le monde lucratif d’une ressource vitale que se disputent public et privé</p>
-                </div>
+                <p id="subtitle-slide1">Plongée dans le monde lucratif d’une ressource vitale que se disputent<br/><br/>
+                    <span id="gros_text">public</span> et
+                    <span id='gros_text'>privé</span>
+                </p>
+            </div>
             </div>
         </section>
 
@@ -53,6 +53,7 @@
         <!----------------------------------------------------------------Etat des lieux France------------------------------------------------------------------------------->
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
         <section class="sectionBorder">
+            <div id='page2'></div>
             <div class="box-slide2">
                 <p id="title-slide2">L'eau en France</p>
                 <div id="text-slide2">
@@ -66,7 +67,7 @@
                 </div>
             </div>
             <!-- <img id="image-slide2" src="src/images/aubergine.png" /> -->
-            <a href="#slide=9" id="button-slide2">Plus d'info &raquo;</a>
+            <a href="#slide=11" id="button-slide2">Plus d'info &raquo;</a>
         </section>
 
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -75,29 +76,31 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
             <div class="box-slide3parent">
                 <p id="title-slide3">Vous et votre eau : qu'en est-il près de chez vous ?</p>
                 <!-- ################################### Recherche de commune ################################### -->
                 <div class="box-slide3">
                     <div id="partie-gauche-slide3">
                         <div id="info_commune">
-                            <div id="consignes">
-                                Votre maire a-t-il délégué la gestion de l’eau potable à une entreprise privée ? Est-elle restée dans le giron public ? Quel est le prix de l’eau dans votre commune ? Comment se place-t-elle par rapport à la moyenne départementale et nationale ?
-
-                                <br/><br/>Découvrez les informations concernant la gestion de l’eau de votre commune grâce à notre carte intéractive !
-
-                                <br/><br/>En survolant la carte avec votre curseur, vous pourrez aussi découvrir ce qui se passe près de chez vous ou ailleurs dans l’Hexagone.
-                                <br/><br/>
-                            </div>
-                            <label for="commune">Votre commune :
-                                    <input list="communes" id="commune" name="commune" style="width:50%"/>
-                                </label>
+                            <input placeholder="Votre commune" list="communes" id="commune" name="commune" style="width:50%" />
                             <datalist id="communes"></datalist>
                             <button id="button-slide3" onclick="search()">Rechercher</button>
                             <br/>
                             <br/>
                             <br/>
-                            <p id="infos_commune"></p>
+                            <div id="consignes">
+                                <p align='justify' id="text_consignes">Votre maire a-t-il délégué la gestion de l’eau potable à une entreprise privée ? Est-elle restée dans le giron public ? Quel est le prix de l’eau dans votre commune ? Comment se place-t-elle par rapport à la moyenne départementale
+                                    et nationale ?
+
+                                    <br/><br/>Découvrez les informations concernant la gestion de l’eau de votre commune grâce à notre carte interactive !
+
+                                    <br/><br/>En survolant la carte avec votre curseur, vous pourrez aussi découvrir ce qui se passe près de chez vous ou ailleurs dans l’Hexagone.
+                                </p>
+                            </div>
+
+
+                            <p align='justify' id="infos_commune"></p>
                         </div>
                         <script>
                             document.querySelector("#commune").addEventListener("keyup", event => {
@@ -124,14 +127,15 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
             <div class="box-slide2">
                 <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
                 <div id="text-slide2">
                     <p align="justify">
-                        <i>“Le public n’était pas en mesure de faire aussi bien que la société privée”</i>, assurait en 2017 Christophe Castaner, alors porte-parole du gouvernement, à propos de la gestion des services publics par le privé. Il avait résumé
-                        la pensée de la plupart des élus français : le privé serait plus compétent techniquement et moins cher.<br/><br/> Certains maires préfèrent que la gestion de l’eau soit déléguée à ceux dont c’est l’expertise, pour le bien-être
-                        des réseaux de leur commune. Et de celui de leurs administrés, les premiers concernés. Mais selon Gabriel Amard, élu France Insoumise et auteur de <i>D comme Droit à l'eau</i>, il y a cet autre argument : nos élus <i>“ne veulent pas se fatiguer. Il se disent que c’est plus simple”</i>,
-                        admet-il dans le livre d’Isabelle Jarjaille <i>Services publics délégués au privé : à qui profite le deal</i>.
+                        <i><span id="guillemet">“</span>Le public n’était pas en mesure de faire aussi bien que la société privée<span id="guillemet">”</span></i>, assurait en 2017 Christophe Castaner, alors porte-parole du gouvernement, à propos de la
+                        gestion des services publics par le privé. Il avait résumé la pensée de la plupart des élus français : le privé serait plus compétent techniquement et moins cher.<br/><br/> Certains maires préfèrent que la gestion de l’eau soit
+                        déléguée à ceux dont c’est l’expertise, pour le bien-être des réseaux de leur commune. Et de celui de leurs administrés, les premiers concernés. Mais selon Gabriel Amard, élu France Insoumise et auteur de <span id="underline">D comme Droit à l'eau</span>,
+                        il y a cet autre argument : nos élus <i>“ne veulent pas se fatiguer. Il se disent que c’est plus simple”</i>, admet-il dans le livre d’Isabelle Jarjaille <span id="underline">Services publics délégués au privé : à qui profite le deal</span>.
                     </p>
                 </div>
             </div>
@@ -143,12 +147,13 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
+
             <div class="box-slide2">
-                <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
                 <p id="subtitle-slide2">Le privé ferait mieux, plus vite et moins cher</p>
                 <div id="text-slide2">
                     <p align="justify">
-                        Ce point de vue, c’est aussi celui de Simon Porcher : <i>“Quand les municipalités savent faire, elles le font en régie. Quand c'est trop compliqué, elles passent par l'entreprise privée qui va mieux gérer.”</i>Autrement dit, pour
+                        Ce point de vue, c’est aussi celui de Simon Porcher : <i>“Quand les municipalités savent faire, elles le font en régie. Quand c'est trop compliqué, elles passent par l'entreprise privée qui va mieux gérer.”</i> Autrement dit, pour
                         le maire, moins de problème : c’est l’entreprise privée qui fera le job.<br/><br/> Ce sont les élus qui ont le dernier mot. Mais ce serait oublier que derrière, se trouvent aussi les personnels administratifs de la municipalité,
                         les directeurs généraux des services. Ces cadres, sortis des écoles d’administration, où la délégation à bonne presse, reproduisent alors ce modèle. Ils sont alors déchargés des responsabilités et des ennuis éventuels qui en découlent.
 
@@ -164,15 +169,16 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
+
             <div class="box-slide2">
-                <p id="title-slide2">Quand nos élus versent dans la privatisation</p>
                 <p id="subtitle-slide2">La DSP n’est pas exempte de fuites</p>
                 <div id="text-slide2">
                     <p align="justify">
                         Mais la délégation n’est pas exempte de fuite. Dans son rapport d’avril 2018, sur l'alimentation en eau potable de la métropole du Grand Paris, la Chambre régionale des comptes d’Île-de-France note des dysfonctionnements récurrents dans la gestion déléguée.<br/><br/>                        Le premier, c'est le tarif plus élevé de l’eau (en moyenne 10% plus chère qu’en régie publique). C’est lié à <i>“l'application de formules d'indexation, qui conduit à des tarifs déconnectés du coût réel de l’exploitation”</i>.<br/><br/>                        Un prix de l’eau plus élevé pour permettre, normalement, à la société gérante de mettre en oeuvre des travaux pour bien entretenir le réseau. Or, il n’y a pas de garantie qu’elle fasse le nécessaire en termes sanitaires notamment
-                        : un risque pour la santé des usagers. Le second concerne le manque de clarté financière entre le délégataire et l’autorité publique. En effet, cette dernière ne permet pas à la collectivité de garder la main sur la gestion du
-                        service. Et en pointant du doigts les déboires de la DSP, la Chambre souligne aussi les bienfaits de la régie publique de l’eau, dont l’un des avantages est que “la collectivité dispose de l’intégralité de l'information financière
-                        qui la concerne.”
+                        : un risque pour la santé des usagers. <br/><br/>Le second concerne le manque de clarté financière entre le délégataire et l’autorité publique. En effet, cette dernière ne permet pas à la collectivité de garder la main sur la gestion
+                        du service. Et en pointant du doigts les déboires de la DSP, la Chambre souligne aussi les bienfaits de la régie publique de l’eau, dont l’un des avantages est que <i>“la collectivité dispose de l’intégralité de l'information financière
+                        qui la concerne.”</i>
 
                     </p>
                 </div>
@@ -185,27 +191,44 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
+
             <div class="box-slide2">
                 <p id="title-slide2">Le retour en force de la gestion publique</p>
                 <div id="text-slide2">
                     <p align="justify">
-                        Mais la délégation n’est pas exempte de fuite. Dans son rapport d’avril 2018, sur l'alimentation en eau potable de la métropole du Grand Paris, la Chambre régionale des comptes d’Île-de-France note des dysfonctionnements récurrents dans la gestion déléguée.
-                        Le premier, c'est le tarif plus élevé de l’eau (en moyenne 10% plus chère qu’en régie publique). C’est lié à “l'application de formules d'indexation, qui conduit à des tarifs déconnectés du coût réel de l’exploitation”. Un prix
-                        de l’eau plus élevé pour permettre, normalement, à la société gérante de mettre en oeuvre des travaux pour bien entretenir le réseau. Or, il n’y a pas de garantie qu’elle fasse le nécessaire en termes sanitaires notamment : un
-                        risque pour la santé des usagers. <br/><br/>Le second concerne le manque de clarté financière entre le délégataire et l’autorité publique. En effet, cette dernière ne permet pas à la collectivité de garder
-                        la main sur la gestion du service. Et en pointant du doigts les déboires de la DSP, la Chambre souligne aussi les bienfaits de la régie publique de l’eau, dont l’un des avantages est que <i>“la collectivité dispose de l’intégralité de l'information financière qui la
-                        concerne.”</i>
+                        <i>“Un service délégué au privé doit être rentable pour l’entreprise”</i>, explique Isabelle Jarjaille.
+                        <i>“Il y aura donc toujours une part, plus ou moins importante selon le sérieux avec lequel la collectivité a signé son contrat”</i>. Puisque l’objectif d’une entreprise est de faire du profit, une DSP est donc négocié pour qu’une
+                        partie des bénéfices soient reversés à des actionnaires privés. <br/><br/>Tout se joue au moment où la ville signe le contrat avec une entreprise privée. C’est sa rédaction initiale, notamment autour de sa durée, qui fera que l’accord
+                        entre les deux sera au bénéfice de l’intérêt général. Ou pas. En général, un investissement de 20 millions d’euros équivaut à une durée de concession de 40 ans. Cela veut dire que, normalement, le concessionnaire aura rapidement
+                        remboursé son investissement et engrangera ensuite des bénéfices. Mais avec des concessions si longues, la commune se prive de ressources potentiellement importantes.
                     </p>
+                </div>
+            </div>
+        </section>
 
-                    <p><b> Tout se joue dans le contrat</b></p>
+        <section class="sectionBorder">
+            <div id='page'></div>
+
+            <div class="box-slide2">
+                <p id="subtitle-slide2">Tout se joue dans le contrat</p>
+                <div id="text-slide2">
                     <p align="justify">
                         Toujours est-il, si bénéfices il y a, ils devraient retomber dans les poches de la municipalité à la fin du contrat. Sauf que certains contrats vont à l’encontre de l’intérêt général. Pour Michèle Rivasi, adjointe au maire Europe Ecologie Les Verts à
                         Valence, dont le contrat avec Veolia se terminait en 2010 : <i>“Veolia avait tout : l’eau, les déchets, la station d’épuration[...]. En échange, quand la mairie avait besoin d’un coup de pouce, Veolia payait.”</i>                        Mais elle nuance : <i>“Quand
-                        on regarde dans le détail, on voit qu’ils n’ont pas enlevé toutes les canalisations en plomb, ils le faisaient au goutte à goutte. Quand il y avait des fuites, ils s’en foutaient [...] puisque plus on consommait, plus ils recevaient
-                        de l’argent”</i>.<br/><br/> Avec une régie qui offre à la collectivité une transparence dans le prix et la gestion du réseau, la poursuite de l’intérêt collectif est parfois facilité.
+                                on regarde dans le détail, on voit qu’ils n’ont pas enlevé toutes les canalisations en plomb, ils le faisaient au goutte à goutte. Quand il y avait des fuites, ils s’en foutaient [...] puisque plus on consommait, plus ils recevaient
+                                de l’argent”</i>.<br/><br/> Avec une régie qui offre à la collectivité une transparence dans le prix et la gestion du réseau, la poursuite de l’intérêt collectif est parfois facilité.
                     </p>
+                </div>
+            </div>
+        </section>
 
-                    <p><b> Le passage en régie, entre bienfaits et difficulté d’adaptation</b></p>
+        <section class="sectionBorder">
+            <div id='page'></div>
+
+            <div class="box-slide2">
+                <p id="subtitle-slide2">Le passage en régie, entre bienfaits et difficulté d’adaptation</p>
+                <div id="text-slide2">
                     <p align="justify">
                         Pour qu’une commune se lance dans la grande aventure de la régie publique, l’essentiel est de réunir des compétences pour la gestion du réseau et de posséder une population suffisante pour amortir les investissements.<br/><br/>                        À Rennes par exemple, lors du passage en régie, la société publique Eau du Bassin Rennais a récupéré 90 % des salariés de Veolia. <i>“Pendant deux ans, nous avons rencontré l’ensemble du personnel pour faire un point sur le fonctionnement du service”</i>,
                         raconte Yannick Nadesan, président de la société. <i>Au final, on fait un bond de productivité à deux chiffres sur certains services par rapport au fonctionnement avec Veolia.”</i> Cette conversion de personnel, toutes les communes
@@ -216,13 +239,14 @@
             </div>
         </section>
 
-
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
         <!----------------------------------------------------------------DIAPO 7------------------------------------------------------------------------------->
         <!----------------------------------------------------------------Conclusion ------------------------------------------------------------------------------->
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
+
             <div class="box-slide2">
                 <p id="title-slide2">Le choix du privé ou du public : quelles conséquences pour les municipalités ?</p>
                 <div id="text-slide2">
@@ -231,32 +255,34 @@
                         un caractère politique potentiel. Le terme de <i>“remunicipalisation de la gestion de l’eau”</i>, c’est-à-dire le retour en régie, peut être un axe fort d’un programme.<br/><br/>Pourtant, alors que le 1er janvier 2020 marquera
                         un tournant avec le passage de la gestion de l’eau des communes aux intercommunalités (Loi NOTRe), <i>“on ne voit pas ressortir de mouvement, ni de la part des citoyens ni d’élus, sur cette question</i>, avoue Isabelle Jarjaille.
                         <i>C’est comme Aéroport
-                        de Paris, ce n’est pas des sujets que les gens sont capables de s’approprier facilement. Les enjeux ne mobilisent pas vraiment les gens.”</i><br/><br/> <i>“La vague de retour en régie est passée, observe Simon Porcher. Les municipalités qui se
+                        de Paris, ce n’est pas des sujets que les gens sont capables de s’approprier facilement. Les enjeux ne mobilisent pas vraiment les gens.”</i><br/><br/> <i>“La vague de retour en régie est passée</i>, observe
+                        Simon Porcher. <i>Les municipalités qui se
                         sont posées la question sont soit retournés en régie, notamment entre 2015 et 2017, avant la loi, soit elles ont refusé de se retourner vers la régie car ce n'était pas avantageux.”</i>
                     </p>
 
-                    <p><b> Quand le gestionnaire privé regarde à ses dépenses</b></p>
+                    <p id="subtitle-slide2"> Quand le gestionnaire privé regarde à ses dépenses</p>
                     <p align="justify">
                         Avec une fin d’année 2019 marquée par les fortes précipitations, certaines villes ont dû gérer les pluies torrentielles pour éviter tout débordement sur leurs chaussées. Ce fut le cas à Narbonne, en octobre 2019 où il est tombé en 24 heures l’équivalent
-                        de <a href="https://www.infoclimat.fr/base-climatologique-16-narbonne.html" target="_blank" />onze mois de pluie</a>. <br/<br/>D’après le journal L’indépendant, les équipes de Veolia, et les services municipaux
-                        avaient tenté d'éviter les débordements sur les chaussées. Or, une telle quantité d’eau est difficilement absorbable en peu de temps. Une rumeur est alors montée des habitants : les pompes auraient été défectueuses. La société
-                        gestionnaire et la ville de Narbonne ont démenti ces accusations. Recueillie par L’Indépendant, la défense de Frédéric Salin, le directeur départemental de Veolia : <i>« Depuis l'inondation de 2018, on a acheté une pompe mobile [...]
+                        de <a href="https://www.infoclimat.fr/base-climatologique-16-narbonne.html" target="_blank" />onze mois de pluie</a>. <br/<br/>D’après le journal <span id="underline">L’indépendant</span>, les équipes de
+                        Veolia, et les services municipaux avaient tenté d'éviter les débordements sur les chaussées. Or, une telle quantité d’eau est difficilement absorbable en peu de temps. Une rumeur est alors montée des habitants : les pompes auraient
+                        été défectueuses. La société gestionnaire et la ville de Narbonne ont démenti ces accusations. Recueillie par <span id="underline">L’Indépendant</span>, la défense de Frédéric Salin, le directeur départemental de Veolia : <i>« Depuis l'inondation de 2018, on a acheté une pompe mobile [...]
                         on a renforcé le poste de relevage du club de Bridge, ajoutant une pompe mobile aux trois existantes pour faire descendre le niveau plus rapidement. »</i> Une initiative qui s’est révélée insuffisante. En 2018, Veolia affichait
                         pourtant un bénéfice de 439 millions d’euros.
                     </p>
 
-                    <p><b> Quand la régie publique coule de source </b></p>
+                    <p id="subtitle-slide2"> Quand la régie publique coule de source </p>
                     <p align="justify">
-                        Certaines villes comme Paris Nice, Metz, ou encore Valence, n’ont pas attendu 2020 le transfert des compétences « eau et assainissement » vers les communautés de communes et d’agglomération, pour faire leur retour en régie.<br/><br/>                        À Rennes, la question est réglée depuis le 1er janvier 2015. À cette date, l’agglomération devenait Rennes Métropole, induisant dans le même temps le transfert de la gestion de l’eau potable avec la naissance de la collectivité
+                        Certaines villes comme Paris, Nice, Metz, ou encore Valence, n’ont pas attendu 2020 le transfert des compétences « eau et assainissement » vers les communautés de communes et d’agglomération, pour faire leur retour en régie.<br/><br/>                        À Rennes, la question est réglée depuis le 1er janvier 2015. À cette date, l’agglomération devenait Rennes Métropole, induisant dans le même temps le transfert de la gestion de l’eau potable avec la naissance de la collectivité
                         Eau du Bassin Rennais. En 2016, elle déclarait 3,7 millions d’euros de résultat net avant impôt, qu’elle a ré-investi dans le réseau. Avec un principe simple, que rappelle le président d’Eau du Bassin Rennais, Yannick Nadesan :
                         <i>“l’eau paie l’eau.”</i> En bref, le service public au service du public, et rien de plus ni de moins.
                     </p>
 
-                    <p><b> Quand le public entre en eaux troubles  </b></p>
+                    <p id="subtitle-slide2"> Quand le public entre en eaux troubles </p>
                     <p align="justify">
                         La gestion publique de l’eau n’est pas toujours un long fleuve tranquille. C’est ce qui s’est passé pour six communes du Var en février 2019. Pour resituer le contexte, le réseau d’eau potable dans la région est gérée par la Société du Canal de la Rive
-                        Droite pour le compte de l’Etat depuis 1914. Mais selon Nice Matin, tout cela va changer en 2020, quand la régie de l’eau de la Métropole Nice Côte d’Azur récupérera la gestion de toute la distribution d’eau sur son territoire.
-                        Et celle du Canal de la Rive Droite, d’où l’eau du réseau est puisée. Mais la régie s'est aperçue que le canal présentait d'importantes fuites. La perte s’affiche à 3,2 millions de mètres cube d’eau par an.<br/><br/>                        Selon Michel Anfossi, président de la société du Canal rive droite <i>"un million d’euros par an"</i> sont nécessaires pour réparer les canalisations abîmées. Et <i>"400.000 € pour renouveler les conduites et 600.000 € pour les fuites"</i>.
+                        Droite pour le compte de l’Etat depuis 1914. Mais selon <span id="underline">Nice Matin</span>, tout cela va changer en 2020, quand la régie de l’eau de la Métropole Nice Côte d’Azur récupérera la gestion
+                        de toute la distribution d’eau sur son territoire. Et celle du Canal de la Rive Droite, d’où l’eau du réseau est puisée. Mais la régie s'est aperçue que le canal présentait d'importantes fuites. La perte s’affiche à 3,2 millions
+                        de mètres cube d’eau par an.<br/><br/> Selon Michel Anfossi, président de la société du Canal rive droite <i>"un million d’euros par an"</i> sont nécessaires pour réparer les canalisations abîmées. Et <i>"400.000 € pour renouveler les conduites et 600.000 € pour les fuites"</i>.
                         Mais qui dit travaux dit dépenses, et qui dit dépenses dit besoin de financement. Conséquences : Une hausse du prix du mètre cube d’eau qui passe de 0,46 à 0,85 euro. Et pour les usagers en colère, une répercussion sur leur porte-monnaie.
                     </p>
                 </div>
@@ -269,8 +295,10 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page'></div>
+
             <div class="box-slide8">
-                <p id="title-slide8">Plus d'informations</p>
+                <p id="title-slide2">Plus d'informations</p>
                 <div class="row-slide8">
                     <div id="partie-gauche-slide8">
                         <div onmouseover="changeSlide8Content('bref')" class="button-slide8" id="enbref-slide8">La délégation de service public en bref</div>
@@ -299,6 +327,8 @@
         <!------------------------------------------------------------------------------------------------------------------------------------------------------>
 
         <section class="sectionBorder">
+            <div id='page3'></div>
+
             <div class="box-slide9">
                 <div class='row-slide9'>
                     <img id='img-hyblab' src="src/images/hyblab.png" />
@@ -343,4 +373,4 @@
     <script src="src/scripts/background/app.js" type="text/javascript"></script>
 </body>
 
-</html>
+</html>s
