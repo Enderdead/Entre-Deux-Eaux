@@ -62,7 +62,7 @@ a {
     /* border-style: solid; */
     /* border-width: 50px 100px 100px 100px; */
     margin: 5% 5% 5% 2%;
-    /* background-color: #d3d3d3AA; */
+    /* background-color: #FFFFFFAA; */
     /*top right bottom left*/
     /* -moz-box-shadow: 3v 3px 5px 6px rgb(105, 105, 105);
     -webkit-box-shadow: 3px 3px 5px 6px rgb(105, 105, 105);
@@ -76,7 +76,7 @@ a {
     /* background-color: red; */
     height: 95vh;
     width: 90vw;
-    background-color: #d3d3d3DD
+    background-color: #FFFFFFBF;
 }
 
 #page {
@@ -86,7 +86,7 @@ a {
     /* background-color: red; */
     height: 101vh;
     width: 90vw;
-    background-color: #d3d3d3DD;
+    background-color: #FFFFFFBF;
 }
 
 #page3 {
@@ -96,7 +96,7 @@ a {
     /* background-color: red; */
     height: 95vh;
     width: 90vw;
-    background-color: #d3d3d3DD;
+    background-color: #FFFFFFBF;
 }
 
 @media (max-width:1024px),
