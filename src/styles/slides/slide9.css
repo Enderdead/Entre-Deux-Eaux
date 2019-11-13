@@ -1,0 +1,18 @@
+.box-slide9 {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: flex-start;
+}
+
+.row-slide9 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img-hyblab {
+    margin-top: 2em;
+    width: 30%;
+}
