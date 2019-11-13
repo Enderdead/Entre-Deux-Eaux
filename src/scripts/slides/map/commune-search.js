@@ -107,7 +107,7 @@ function getInfoCommune(nom_commune) {
                     } else {
                         res += "commune "
                     }
-                    res += "est de " + mean.toFixed(2) + "€."
+                    res += "est de <span id='big-slide2'>" + mean.toFixed(2) + "€</span>."
                 }
 
 
@@ -134,9 +134,9 @@ function getInfoDepartement(nom_commune) {
             }
 
             if (departements[departement].nb_delegation > departements[departement].nb_regie) {
-                return "Votre département délègue en majorité la gestion de son eau et le prix moyen au mètre cube y est de " + departements[departement].prix_moyen + "€."
+                return "Votre département délègue en majorité la gestion de son eau et le prix moyen au mètre cube y est de  <span id='big-slide2'>" + departements[departement].prix_moyen + "€</span>."
             } else {
-                return "Votre département régie en majorité la gestion de son eau et le prix moyen au mètre cube y est de " + departements[departement].prix_moyen + "€."
+                return "Votre département régie en majorité la gestion de son eau et le prix moyen au mètre cube y est de  <span id='big-slide2'>" + departements[departement].prix_moyen + "€</span>."
             }
         }
     }
@@ -144,7 +144,7 @@ function getInfoDepartement(nom_commune) {
 }
 
 function getInfoFrance() {
-    return "En France, deux tiers des communes gèrent elles-mêmes la distribution de l'eau. En métropole, le prix moyen au mètre cube est de 2.43€."
+    return "En France, deux tiers des communes gèrent elles-mêmes la distribution de l'eau. En métropole, le prix moyen au mètre cube est de  <span id='big-slide2'>2.43€</span>."
 }
 
 
