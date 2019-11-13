@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 3%;
-    border: 1px solid #2c28ac;
     max-height: 60vh;
 }
 
@@ -40,6 +39,7 @@
 
 .container-slide8 {
     height: 100%;
+    font-size: 1.5em;
 }
 
 .row-slide8 {
@@ -51,9 +51,22 @@
 }
 
 .button-slide8 {
-    font-size: 100%;
     margin-bottom: 10px;
     padding: 10px;
+    font-size: 1.5em;
+    color: #2586C2;
+}
+
+#subtitle-slide8 {
+    font-size: 1.8vw;
+    margin-left: 6%;
+    color: #2586C2;
+    font-weight: 600;
+}
+
+#blue-text {
+    color: #2586C2;
+    font-weight: 600;
 }
 
 #enbref-slide8:hover {

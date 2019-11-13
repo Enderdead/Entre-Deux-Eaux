@@ -1,6 +1,6 @@
 * {
     outline: 0 !important;
-    font-family: 'Montserrat' !important;
+    font-family: 'Montserrat Alternates', sans-serif !important;
 }
 
 html,
@@ -46,15 +46,56 @@ a {
     position: absolute;
 }
 
+.sectionBorder1 {
+    /* border-style: solid; */
+    /* border-width: 50px 100px 100px 100px; */
+    margin: 10% 5% 5% 5%;
+    background-color: transparent;
+    /*top right bottom left*/
+    /* -moz-box-shadow: 3v 3px 5px 6px rgb(105, 105, 105);
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(105, 105, 105);
+    box-shadow: 3px 3px 5px 6px rgb(105, 105, 105); */
+}
+
 .sectionBorder {
     /* border-style: solid; */
     /* border-width: 50px 100px 100px 100px; */
     margin: 10% 5% 5% 5%;
-    background-color: #FFFFFFAA;
+    /* background-color: #d3d3d3AA; */
     /*top right bottom left*/
-    -moz-box-shadow: 3v 3px 5px 6px rgb(105, 105, 105);
+    /* -moz-box-shadow: 3v 3px 5px 6px rgb(105, 105, 105);
     -webkit-box-shadow: 3px 3px 5px 6px rgb(105, 105, 105);
-    box-shadow: 3px 3px 5px 6px rgb(105, 105, 105);
+    box-shadow: 3px 3px 5px 6px rgb(105, 105, 105); */
+}
+
+#page2 {
+    position: absolute;
+    margin: 10vh 5vh 0vh 5vh;
+    z-index: -1;
+    /* background-color: red; */
+    height: 95vh;
+    width: 90vw;
+    background-color: #d3d3d3AA;
+}
+
+#page {
+    position: absolute;
+    margin: -1vh 5vh -1vh 5vh;
+    z-index: -1;
+    /* background-color: red; */
+    height: 101vh;
+    width: 90vw;
+    background-color: #d3d3d3AA;
+}
+
+#page3 {
+    position: absolute;
+    margin: 0vh 5vh 5vh 5vh;
+    z-index: -1;
+    /* background-color: red; */
+    height: 95vh;
+    width: 90vw;
+    background-color: #d3d3d3AA;
 }
 
 @media (max-width:1024px),
