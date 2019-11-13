@@ -252,3 +252,10 @@ a {
     width: 0.1%;
     background-color: transparent;
 }
+#myVideo {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: -2;
+  }

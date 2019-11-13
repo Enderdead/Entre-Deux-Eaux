@@ -6,6 +6,13 @@
     align-items: center;
 }
 
+#video-slide1 {
+    position: absolute;
+    left: 45%;
+    bottom: 5%;
+    height: 10%;
+}
+
 #subtitle-slide1 {
     /* position: absolute;
     z-index: inherit 1;

@@ -29,7 +29,7 @@
                     margin-bottom: 5%;
                 }
                 
-                #image-slide2 {
+                #video-slide2 {
                     position: absolute;
                     right: 0;
                     top: 0;
@@ -47,7 +47,6 @@
                 #subtitle-slide2 {
                     font-size: 2vw;
                     margin-left: 6%;
-                    line-height: 1.1em;
                     color: #2586C2;
                     font-weight: 600;
                 }
