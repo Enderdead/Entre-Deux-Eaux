@@ -11,3 +11,17 @@
     justify-content: space-between;
     height: 60vh;
 }
+
+#video-slide4 {
+    position: absolute;
+    right: -5%;
+    top: 15%;
+    height: 30vw;
+}
+
+#video-slide5 {
+    position: absolute;
+    right: -3.5%;
+    top: -13.5%;
+    height: 30vw;
+}
